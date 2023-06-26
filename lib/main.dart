@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MyApp(),
+    const MyApp(),
   );
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.black26,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const CircleAvatar(
+              CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.red,
                 backgroundImage: AssetImage('images/me.jpg'),
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              const Text(
+              Text(
                 'Dewmith Akalanka',
                 style: TextStyle(
                   fontFamily: 'JosefinSans',
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Text(
+              Text(
                 'Associate Software Engineer',
                 style: TextStyle(
                   fontFamily: 'Caveat',
@@ -49,13 +51,13 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Card(
                   color: Colors.white,
-                  margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: Padding(
                     padding: EdgeInsets.all(10.0),
-                    child: const Row(
+                    child: Row(
                       children: <Widget>[
                         Icon(
                           Icons.phone,
@@ -79,13 +81,13 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Card(
                   color: Colors.white,
-                  margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: Padding(
                     padding: EdgeInsets.all(10.0),
-                    child: const Row(
+                    child: Row(
                       children: <Widget>[
                         Icon(
                           Icons.email,
